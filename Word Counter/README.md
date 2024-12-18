@@ -52,6 +52,3 @@ Total word count: 7
 ## Notes
 - The program ensures that punctuation does not affect word counting.
 - Handles spaces, special characters, and mixed punctuation effectively.
-
----
-Congratulations on completing the Word Counter project! 🚀
