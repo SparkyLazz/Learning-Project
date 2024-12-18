@@ -1,0 +1,15 @@
+D:\Applications\Github\Learning-Project\TicTacToe\bin\Debug\net9.0\TicTacToe.exe
+D:\Applications\Github\Learning-Project\TicTacToe\bin\Debug\net9.0\TicTacToe.deps.json
+D:\Applications\Github\Learning-Project\TicTacToe\bin\Debug\net9.0\TicTacToe.runtimeconfig.json
+D:\Applications\Github\Learning-Project\TicTacToe\bin\Debug\net9.0\TicTacToe.dll
+D:\Applications\Github\Learning-Project\TicTacToe\bin\Debug\net9.0\TicTacToe.pdb
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\TicTacToe.AssemblyInfoInputs.cache
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\TicTacToe.AssemblyInfo.cs
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\TicTacToe.csproj.CoreCompileInputs.cache
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\TicTacToe.sourcelink.json
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\TicTacToe.dll
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\refint\TicTacToe.dll
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\TicTacToe.pdb
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\TicTacToe.genruntimeconfig.cache
+D:\Applications\Github\Learning-Project\TicTacToe\obj\Debug\net9.0\ref\TicTacToe.dll
