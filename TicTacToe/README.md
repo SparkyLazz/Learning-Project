@@ -51,6 +51,14 @@ The **Tic Tac Toe Game** is a console-based implementation of the classic two-pl
 Displays the current state of the board in the terminal.
 ```csharp
 static void DisplayBoard(string[,] data)
+{
+    Console.WriteLine("------------------------------");
+   for (var i = 0; i < 3; i++)
+   {
+      Console.WriteLine($"{data[i, 0]} | {data[i, 1]} | {data[i, 2]}");
+      if (i < 2) Console.WriteLine("--+---+--");
+   }
+}
 ```
 - Loops through the `board` array to print the 3x3 grid.
 - Includes separators (`--+---+--`) between rows.
@@ -59,6 +67,29 @@ static void DisplayBoard(string[,] data)
 Processes the player’s input and updates the board if the move is valid.
 ```csharp
 static bool UserChoice(string[,] data, int userInput)
+{
+   var isUpdated = false;
+   for (var i = 0; i < 3; i++)
+   {
+      for (var j = 0; j < 3; j++)
+      {
+         if (userInput.ToString() == data[i, j])
+         {
+            data[i, j] = "x";
+            isUpdated = true;
+            break;
+         }
+      }
+      if(isUpdated) break;
+   }
+   if (!isUpdated)
+   {
+      Console.WriteLine("------------------------------");
+      Console.WriteLine("Invalid move! The position is already taken or out of bounds.");
+      return false;
+   }
+   return true;
+}
 ```
 - Checks if the selected cell matches the input number.
 - Updates the board with `X` if valid, otherwise prompts for a retry.
@@ -67,6 +98,25 @@ static bool UserChoice(string[,] data, int userInput)
 Randomly selects an empty cell and updates the board with the computer’s move.
 ```csharp
 static void ComputerTurn(string[,] board)
+{
+   var random = new Random();
+   while (true)
+   {
+      // Randomly select a position between 1 and 9
+      var index = random.Next(1, 10);
+
+      // Find corresponding row and column
+      int row = (index - 1) / 3;
+      int col = (index - 1) % 3;
+
+      // Check if the position is empty
+      if (board[row, col] != "x" && board[row, col] != "o")
+      {
+         board[row, col] = "o"; // Place the computer's move
+         break; // Exit the loop after making a move
+      }
+   }
+}
 ```
 - Uses `Random.Next(1, 10)` to pick a number.
 - Maps the number to the corresponding row and column.
@@ -76,6 +126,17 @@ static void ComputerTurn(string[,] board)
 Evaluates the board for winning conditions (rows, columns, diagonals).
 ```csharp
 static bool WinChecker(string[,] board, string player)
+{
+   for (int i = 0; i < 3; i++)
+   {
+      if (board[i, 0] == player && board[i, 1] == player && board[i, 2] == player) return true; // Horizontal
+      if (board[0, i] == player && board[1, i] == player && board[2, i] == player) return true; // Vertical
+   }
+   if (board[0, 0] == player && board[1, 1] == player && board[2, 2] == player) return true; // Diagonal
+   if (board[0, 2] == player && board[1, 1] == player && board[2, 0] == player) return true; // Diagonal
+   return false;
+
+}
 ```
 - Loops through rows and columns to check for three matching marks.
 - Checks diagonals for the same condition.
