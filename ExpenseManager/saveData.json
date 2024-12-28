@@ -1,3 +1,8 @@
 [
-  
+  {
+    "Id": 1,
+    "Description": "Methodist",
+    "Amount": 600000.0,
+    "Date": "2024-1-06"
+  }
 ]

@@ -11,6 +11,7 @@ namespace ExpenseManager
             SetUp();
             while (true)
             {
+                Thread.Sleep(1000);
                 Console.WriteLine("Welcome to Expense Manager");
                 Console.WriteLine("1. Add Expense");
                 Console.WriteLine("2. View Expense");
@@ -44,7 +45,7 @@ namespace ExpenseManager
                 Console.WriteLine("Description : | Empty = item");
                 string description = Console.ReadLine() ?? "item";
                 Console.WriteLine("Amount : | Empty = 1");
-                int amount = Convert.ToInt16(Console.ReadLine());
+                long amount = Convert.ToInt64(Console.ReadLine());
                 Console.WriteLine("Date (YYYY-MM-DD): | Empty = Date.now");
                 string date = Console.ReadLine() ?? DateTime.Now.ToString("yyyy-MM-dd");
 
@@ -78,6 +79,21 @@ namespace ExpenseManager
 
         private static void DeleteExpense()
         {
+            ViewExpense();
+            Console.WriteLine("Please enter ID : ");
+            long userInput = Convert.ToInt64(Console.ReadLine());
+            int removed = _expenses.RemoveAll(item => item.Id == userInput);
+
+            if (removed > 0)
+            {
+                Console.WriteLine("Expense removed successfully!");
+                Console.WriteLine("-------------------------------------------------------");
+            }
+            else
+            {
+                Console.WriteLine("No expense found with the given ID.");
+                Console.WriteLine("-------------------------------------------------------");
+            }
             
         }
         
