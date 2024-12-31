@@ -1,0 +1,18 @@
+D:\Applications\Github\Learning-Project\To Do List\bin\Debug\net9.0\To Do List.exe
+D:\Applications\Github\Learning-Project\To Do List\bin\Debug\net9.0\To Do List.deps.json
+D:\Applications\Github\Learning-Project\To Do List\bin\Debug\net9.0\To Do List.runtimeconfig.json
+D:\Applications\Github\Learning-Project\To Do List\bin\Debug\net9.0\To Do List.dll
+D:\Applications\Github\Learning-Project\To Do List\bin\Debug\net9.0\To Do List.pdb
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.GeneratedMSBuildEditorConfig.editorconfig
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.AssemblyInfoInputs.cache
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.AssemblyInfo.cs
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.csproj.CoreCompileInputs.cache
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.sourcelink.json
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.dll
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\refint\To Do List.dll
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.pdb
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.genruntimeconfig.cache
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\ref\To Do List.dll
+D:\Applications\Github\Learning-Project\To Do List\bin\Debug\net9.0\Newtonsoft.Json.dll
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.csproj.AssemblyReference.cache
+D:\Applications\Github\Learning-Project\To Do List\obj\Debug\net9.0\To Do List.csproj.Up2Date
