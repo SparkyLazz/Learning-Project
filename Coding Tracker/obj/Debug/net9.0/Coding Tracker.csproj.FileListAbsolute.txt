@@ -1,0 +1,18 @@
+D:\Applications\Github\Learning-Project\Coding Tracker\bin\Debug\net9.0\Coding Tracker.exe
+D:\Applications\Github\Learning-Project\Coding Tracker\bin\Debug\net9.0\Coding Tracker.deps.json
+D:\Applications\Github\Learning-Project\Coding Tracker\bin\Debug\net9.0\Coding Tracker.runtimeconfig.json
+D:\Applications\Github\Learning-Project\Coding Tracker\bin\Debug\net9.0\Coding Tracker.dll
+D:\Applications\Github\Learning-Project\Coding Tracker\bin\Debug\net9.0\Coding Tracker.pdb
+D:\Applications\Github\Learning-Project\Coding Tracker\bin\Debug\net9.0\Newtonsoft.Json.dll
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding Tracker.csproj.AssemblyReference.cache
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding Tracker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding Tracker.AssemblyInfoInputs.cache
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding Tracker.AssemblyInfo.cs
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding Tracker.csproj.CoreCompileInputs.cache
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding Tracker.sourcelink.json
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding T.E132D168.Up2Date
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding Tracker.dll
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\refint\Coding Tracker.dll
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding Tracker.pdb
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\Coding Tracker.genruntimeconfig.cache
+D:\Applications\Github\Learning-Project\Coding Tracker\obj\Debug\net9.0\ref\Coding Tracker.dll
