@@ -1,9 +1,12 @@
-﻿namespace Productivity_Terminal.Tracking
+﻿using System.Globalization;
+
+namespace Productivity_Terminal.Tracking
 {
     public class Tracking
     {
         public required long Id;
         public required string Name;
+        // ReSharper disable once MemberCanBePrivate.Global
         public List<Record> Records = new List<Record>();
 
         public static void TrackingMenu(List<Tracking> tracks, List<ToDoList.ToDoList> toDoLists)
@@ -26,6 +29,10 @@
                     case "1":
                         Console.Clear();
                         AddTrack(tracks, toDoLists);
+                        break;
+                    case "2":
+                        Console.Clear();
+                        ViewTrack(tracks, toDoLists);
                         break;
                     case "5":
                         isExit = true;
@@ -78,6 +85,71 @@
             Console.Clear();
         }
 
+        private static void ViewTrack(List<Tracking> tracks, List<ToDoList.ToDoList> toDoLists)
+        {
+            Console.WriteLine("========================================================================================");
+            Console.WriteLine($"{"ID", -5} {"Name", -20} {"Total Record", -20} {"Total Duration", -20}");
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+            foreach (var track in tracks)
+            {
+                var totalDuration = track.Records
+                    .Select(record => record.Duration)
+                    .Aggregate(TimeSpan.Zero, (acc, duration) => acc.Add(duration));
+                
+                Console.WriteLine($"{track.Id, -5} {track.Name, -20} {track.Records.Count, -20} {totalDuration:hh\\:mm\\:ss}");
+            }
+            Console.WriteLine("========================================================================================");
+            while (true)
+            {
+                Console.Write("Choose one of them for details || Exit : ");
+                string userInput = Console.ReadLine() ?? String.Empty;
+                try
+                {
+                    if (userInput.ToLower() == "exit" || string.IsNullOrEmpty(userInput)) break;
+                    var item = tracks[Convert.ToInt32(userInput) - 1];
+                    var list = toDoLists[Convert.ToInt32(userInput) - 1];
+                    var totalDuration = item.Records
+                        .Select(record => record.Duration)
+                        .Aggregate(TimeSpan.Zero, (acc, duration) => acc.Add(duration));
+                    string status = list.IsComplete ? "Done" : "On going";
+                    
+                    Console.Clear();
+                    Console.WriteLine("========================================================================================");
+                    Console.WriteLine($"ID : {item.Id}");
+                    Console.WriteLine($"Project Name : {item.Name}");
+                    Console.WriteLine($"Description : {list.Description}");
+                    Console.WriteLine("Deadline : " + list.DeadLine.ToString("yyyy-MM-dd") + " | Today : " + DateTime.Today.ToString("yyyy-MM-dd"));
+                    Console.WriteLine("Status : " + status);
+                    Console.WriteLine("Total Duration : " + totalDuration.ToString(@"hh\:mm\:ss"));
+                    Console.WriteLine("Record : ");
+                    Console.WriteLine("========================================================================================");
+                    
+                    int id = 1;
+                    foreach (var record in item.Records)
+                    {
+                        Console.WriteLine($"    -> Record ID : {id}");
+                        Console.WriteLine($"        -> Start Time : {record.StartTime.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture)}");
+                        Console.WriteLine($"        -> End Time   : {record.EndTime.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.CurrentCulture)}");
+                        id++;
+                    }
+                    Console.WriteLine("========================================================================================");
+                    Console.WriteLine("Enter to continue");
+                    Console.ReadKey();
+                    break;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("[!] Invalid Input | Enter to continue");
+                }
+            }
+            Console.Clear();
+        }
+
+        private static void AnalyzeTrack(List<Tracking> tracks)
+        {
+            
+        }
+        
         private static void Track(List<Tracking> tracks, ToDoList.ToDoList item)
         {
             Console.Clear();
@@ -110,7 +182,7 @@
                             EndTime = DateTime.Now
                         };
                         
-                        var trackingItem = tracks.FirstOrDefault(t => t.Id == item.Id);
+                        var trackingItem = tracks.FirstOrDefault(t => t.Name == item.Name);
                         if (trackingItem != null)
                         {
                             trackingItem.Records.Add(result);
@@ -147,8 +219,6 @@
             Console.Clear();
         }
     }
-
-    
     
     // ReSharper disable once ClassNeverInstantiated.Global
     public class Record

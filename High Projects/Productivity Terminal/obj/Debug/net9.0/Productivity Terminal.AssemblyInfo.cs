@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Productivity Terminal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f4c40a6145b8699905bf3087d52f73fdd329f6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+716fa98d018c6ecf767705ab8c4e6ad7377b9e2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Productivity Terminal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Productivity Terminal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
