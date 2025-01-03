@@ -1,0 +1,18 @@
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\bin\Debug\net9.0\Productivity Terminal.exe
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\bin\Debug\net9.0\Productivity Terminal.deps.json
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\bin\Debug\net9.0\Productivity Terminal.runtimeconfig.json
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\bin\Debug\net9.0\Productivity Terminal.dll
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\bin\Debug\net9.0\Productivity Terminal.pdb
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Productivity Terminal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Productivity Terminal.AssemblyInfoInputs.cache
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Productivity Terminal.AssemblyInfo.cs
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Productivity Terminal.csproj.CoreCompileInputs.cache
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Productivity Terminal.sourcelink.json
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Productivity Terminal.dll
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\refint\Productivity Terminal.dll
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Productivity Terminal.pdb
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Productivity Terminal.genruntimeconfig.cache
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\ref\Productivity Terminal.dll
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\bin\Debug\net9.0\Newtonsoft.Json.dll
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Productivity Terminal.csproj.AssemblyReference.cache
+D:\Applications\Github\Learning-Project\High Projects\Productivity Terminal\obj\Debug\net9.0\Producti.2DBD4F4F.Up2Date

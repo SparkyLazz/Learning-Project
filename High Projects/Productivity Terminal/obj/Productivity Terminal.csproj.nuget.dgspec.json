@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Applications\\Github\\Learning-Project\\Medium Projects\\Coding Tracker\\Coding Tracker.csproj": {}
+    "D:\\Applications\\Github\\Learning-Project\\High Projects\\Productivity Terminal\\Productivity Terminal.csproj": {}
   },
   "projects": {
-    "D:\\Applications\\Github\\Learning-Project\\Medium Projects\\Coding Tracker\\Coding Tracker.csproj": {
+    "D:\\Applications\\Github\\Learning-Project\\High Projects\\Productivity Terminal\\Productivity Terminal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Applications\\Github\\Learning-Project\\Medium Projects\\Coding Tracker\\Coding Tracker.csproj",
-        "projectName": "Coding Tracker",
-        "projectPath": "D:\\Applications\\Github\\Learning-Project\\Medium Projects\\Coding Tracker\\Coding Tracker.csproj",
+        "projectUniqueName": "D:\\Applications\\Github\\Learning-Project\\High Projects\\Productivity Terminal\\Productivity Terminal.csproj",
+        "projectName": "Productivity Terminal",
+        "projectPath": "D:\\Applications\\Github\\Learning-Project\\High Projects\\Productivity Terminal\\Productivity Terminal.csproj",
         "packagesPath": "C:\\Users\\tonia\\.nuget\\packages\\",
-        "outputPath": "D:\\Applications\\Github\\Learning-Project\\Medium Projects\\Coding Tracker\\obj\\",
+        "outputPath": "D:\\Applications\\Github\\Learning-Project\\High Projects\\Productivity Terminal\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
