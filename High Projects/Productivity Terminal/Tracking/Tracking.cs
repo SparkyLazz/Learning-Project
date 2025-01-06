@@ -16,9 +16,8 @@ namespace Productivity_Terminal.Tracking
             {
                 Console.WriteLine("1. Start Tracking");
                 Console.WriteLine("2. View Tracking");
-                Console.WriteLine("3. Analyze Tracking");
-                Console.WriteLine("4. Delete Tracking");
-                Console.WriteLine("5. Back");
+                Console.WriteLine("3. Delete Tracking");
+                Console.WriteLine("4. Back");
                 Console.WriteLine("========================================================================================");
                 
                 Console.Write("Your action : ");
@@ -34,7 +33,11 @@ namespace Productivity_Terminal.Tracking
                         Console.Clear();
                         ViewTrack(tracks, toDoLists);
                         break;
-                    case "5":
+                    case "3":
+                        Console.Clear();
+                        DeleteTrack(tracks);
+                        break;
+                    case "4":
                         isExit = true;
                         Console.Clear();
                         break;
@@ -145,9 +148,40 @@ namespace Productivity_Terminal.Tracking
             Console.Clear();
         }
 
-        private static void AnalyzeTrack(List<Tracking> tracks)
+        private static void DeleteTrack(List<Tracking> tracks)
         {
-            
+            Console.WriteLine("========================================================================================");
+            Console.WriteLine($"{"ID", -5} {"Name", -20} {"Total Record", -20} {"Total Duration", -20}");
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+            foreach (var track in tracks)
+            {
+                var totalDuration = track.Records
+                    .Select(record => record.Duration)
+                    .Aggregate(TimeSpan.Zero, (acc, duration) => acc.Add(duration));
+                
+                Console.WriteLine($"{track.Id, -5} {track.Name, -20} {track.Records.Count, -20} {totalDuration:hh\\:mm\\:ss}");
+            }
+            Console.WriteLine("========================================================================================");
+            while (true)
+            {
+                Console.Write("Choose one of them for details || Exit : ");
+                string userInput = Console.ReadLine() ?? String.Empty;
+                try
+                {
+                    if (userInput.ToLower() == "exit" || string.IsNullOrEmpty(userInput)) break;
+                    tracks.RemoveAll(session => session.Id == Convert.ToInt32(userInput));
+                    Console.WriteLine("Expense removed successfully! || Enter to continue");
+                    Console.ReadKey();
+                    Console.Clear();
+                    break;
+
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("[!] Invalid Input | Enter to continue");
+                }
+            }
+            Console.Clear();
         }
         
         private static void Track(List<Tracking> tracks, ToDoList.ToDoList item)

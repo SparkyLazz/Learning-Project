@@ -47,6 +47,7 @@ namespace Productivity_Terminal
             {
                 Console.WriteLine("1. To do list");
                 Console.WriteLine("2. Track Productivity");
+                Console.WriteLine("3. Add routine");
                 Console.WriteLine("3. Exit");
                 Console.WriteLine("========================================================================================");
                 Console.Write("Your action : ");
